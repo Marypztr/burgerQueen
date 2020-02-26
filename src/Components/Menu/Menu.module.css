@@ -1,0 +1,139 @@
+
+
+/* azul #2E4057
+amarillo #F4D35E;
+ */
+
+.navbar{
+    background-color: #5E98F4;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+    width:100%;
+    text-align: start;
+    color:white;
+    font-weight: bold;
+
+}
+
+
+.navbar > div{
+    width: 95%;
+ 
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gridContainer{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-right: 10px;
+}
+
+.menuType{
+background-color: white;
+border-radius: 4px;
+width: 200px;
+height: 45px;
+color:#F58443;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.MenuItems{
+    margin-top:15%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    gap:10px;
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+.MenuItems >div{
+    background-color: #5E98F4;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuItems > button{
+    border: none;
+    padding: 2%;
+    border-radius: 10px;
+    background-color:white;;
+    color:#F58443;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+-moz-box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+}
+
+.options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.options > button{
+    border: none;
+    padding: 2%;
+    border-radius: 10px;
+    width: 100%;
+    background-color:white;;
+    color:#F58443;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+-moz-box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+}
+
+.Account{
+    background-color: white;
+    border-radius: 10px;
+    margin-top :20%;
+    color:#F58443;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+-moz-box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
+    
+}
+
+.containerAccount{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height:  90%;
+}
+
+.Account hr{
+    width: 80%;
+    border:2px solid black;
+}
+
+.total button{
+    width:250px;
+    height: 50px;
+    border:none;
+    border-radius: 10px;
+    color: #F58443;
+    font-size: 20px;
+    font-weight: bold;
+}

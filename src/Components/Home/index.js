@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import styles from "./BurgerQueen.module.css"
+import { Link } from "react-router-dom"
+import styles from "./Home.module.css"
 
 /* 
 paleta de colores 
@@ -17,8 +18,14 @@ export default class BurgerQueen extends Component {
                 <div className={styles. positionLogin}>
                     <h1> Bienvenido a BurgerQueen</h1>
                     <h3>Iniciar sesión</h3>
+                    <input type="name"  placeholder="nombe"/>
+                    <input type="email" placeholder="correo electronico" />
+                    <input type="password" placeholder="Contraseña" />
                     <p> <input type="checkbox"/>Soy Gerente</p>
                     <p> <input type="checkbox"/>Soy Mesero</p>
+                    <Link to={"/menu-select"}>
+                        <button>Iniciar sesión</button>
+                    </Link>
                 </div>
             </div>
         )

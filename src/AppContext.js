@@ -20,6 +20,11 @@ export  class AppContextProvider extends React.Component {
             })
             )
     }
+
+    chooseButton(item){
+        
+    }
+
     render() {
         return (
             <AppContext.Provider

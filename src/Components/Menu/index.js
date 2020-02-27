@@ -12,7 +12,10 @@ export default class Menu extends Component {
                <div className={styles.navbar}>
                     <div>                        
                     <p>Selecciona lo que indique el cliente</p>
-                    <div className={styles.menuType}>Comida</div>
+                    <section className={styles.dataMenu}>
+                        <div className={styles.menuType}><input type="text"  placeholder="Nombre del cliente"/></div>
+                        <div className={styles.menuType}><small>No.de mesa</small><input type="text"  placeholder="No."/></div>
+                    </section>
                     </div>
                 </div>
                 <section className={styles.gridContainer}>

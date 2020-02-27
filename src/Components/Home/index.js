@@ -4,11 +4,10 @@ import styles from "./Home.module.css"
 
 /* 
 paleta de colores 
-        #F6D8AE
-        #2E4057
-        #083D77
-        #DA4167
-        #F4D35E
+        #43B4F5 AZUL
+        #DD43F5 FUSCIA
+        #F58443 NARANJA 
+        #5BF543 VERDE
 */
 
 export default class BurgerQueen extends Component {
@@ -16,16 +15,20 @@ export default class BurgerQueen extends Component {
         return (
             <div className={styles.Home}>
                 <div className={styles. positionLogin}>
-                    <h1> Bienvenido a BurgerQueen</h1>
+                    <div className={styles.containerLogin}>
+                    <h1> Bienvenidx a BurgerQueen</h1>
                     <h3>Iniciar sesión</h3>
-                    <input type="name"  placeholder="nombe"/>
+                    <input type="name"  placeholder="nombre"/>
                     <input type="email" placeholder="correo electronico" />
                     <input type="password" placeholder="Contraseña" />
-                    <p> <input type="checkbox"/>Soy Gerente</p>
-                    <p> <input type="checkbox"/>Soy Mesero</p>
+                    <div className={styles.positionCheckbox}>
+                        <p> <input type="checkbox"/>Soy Gerente</p>
+                        <p> <input type="checkbox"/>Soy Mesero</p>
+                    </div>
                     <Link to={"/menu-select"}>
                         <button>Iniciar sesión</button>
                     </Link>
+                    </div>
                 </div>
             </div>
         )

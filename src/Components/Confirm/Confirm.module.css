@@ -1,5 +1,5 @@
 .containerConfirm{
-    background-color: #083D77;
+    background-color: #43B4F5;
     position:absolute;
     top:0;
     bottom:0;
@@ -28,7 +28,7 @@
 
 .detailsOrder button{
     width:200px;
-    color:#5E98F4;
+    color:#43B4F5;
     border:2px solid #F58443;
     border-radius: 10px;
     background-color: transparent;

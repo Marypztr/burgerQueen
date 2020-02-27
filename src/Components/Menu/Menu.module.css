@@ -1,11 +1,14 @@
 
-
-/* azul #2E4057
-amarillo #F4D35E;
- */
+/* 
+paleta de colores 
+        #43B4F5 AZUL
+        #DD43F5 FUSCIA
+        #F58443 NARANJA 
+        #5BF543 VERDE
+*/
 
 .navbar{
-    background-color: #5E98F4;
+    background-color: #43B4F5;
     position: fixed;
     overflow: hidden;
     top:0;
@@ -40,11 +43,32 @@ background-color: white;
 border-radius: 4px;
 width: 200px;
 height: 45px;
-color:#F58443;
+color:black;
+font-weight: normal;
+font-size: small;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+}
 
+
+.menuType small{
+    width: 100px;
+    padding:5px;
+}
+
+.menuType input{
+    border:none;
+    width:120px;
+    padding: 4px;
+ 
+}
+
+.dataMenu{
+    display: flex;
+    width: 35%;
+
+    justify-content: space-between;
 }
 
 .MenuItems{
@@ -58,7 +82,7 @@ align-items: center;
 }
 
 .MenuItems >div{
-    background-color: #5E98F4;
+    background-color: #43B4F5;
     color:white;
     font-weight: bold;
     font-size: 16px;
@@ -146,7 +170,7 @@ box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
 }
 
 .cardPosition{
-    border: 1px solid #5E98F4;
+    border: 1px solid #43B4F5;
     border-radius: 10px;
     padding:2%;
     display: flex;

@@ -1,0 +1,40 @@
+.containerConfirm{
+    background-color: #083D77;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+
+.positionDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.detailsOrder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 2%;
+}
+
+.detailsOrder button{
+    width:200px;
+    color:#5E98F4;
+    border:2px solid #F58443;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top:10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2%;
+    cursor: pointer;
+}

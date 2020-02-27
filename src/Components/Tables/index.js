@@ -4,7 +4,7 @@ export default class Tables extends Component {
     render() {
         return (
             <div>
-                <h1>Orden de tablas</h1>
+                <h1>Orden de Mesas</h1>
             </div>
         )
     }

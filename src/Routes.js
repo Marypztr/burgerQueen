@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom"
 import Home from "../src/Components/Home"
 import MenuSelect from "../src/Components/MenuSelect"
 import Menu from "../src/Components/Menu"
+import Confirm from "../src/Components/Confirm"
 import Tables from "../src/Components/Tables"
 
 const Routes = () => (
@@ -10,6 +11,7 @@ const Routes = () => (
         <Route exact path={"/"} component={Home}/>
         <Route exact path={"/menu-select"} component={MenuSelect}/>
         <Route exact path={"/menu"} component={Menu} />
+        <Route exact path={"/confirmOrder"} component ={Confirm} />
         <Route exact path={"/tables"} component={Tables} />
     </Switch>
 )

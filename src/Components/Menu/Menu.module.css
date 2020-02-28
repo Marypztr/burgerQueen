@@ -66,9 +66,21 @@ align-items: center;
 
 .dataMenu{
     display: flex;
-    width: 35%;
-
+    width: 50%;
+    height: 50px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.dataMenu > button img{
+    width:20px;
+    height: 20px;
+}
+
+.dataMenu > button{
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
 }
 
 .MenuItems{
@@ -178,6 +190,10 @@ box-shadow: 2px 2px 23px -1px rgba(201,204,212,1);
     align-items: center;
     width: 80%;
     
+}
+
+.cardBody  small{
+    font-weight: normal;
 }
 
 .cardBody{

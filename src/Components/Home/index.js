@@ -21,10 +21,6 @@ export default class BurgerQueen extends Component {
                     <input type="name"  placeholder="nombre"/>
                     <input type="email" placeholder="correo electronico" />
                     <input type="password" placeholder="Contraseña" />
-                    <div className={styles.positionCheckbox}>
-                        <p> <input type="checkbox"/>Soy Gerente</p>
-                        <p> <input type="checkbox"/>Soy Mesero</p>
-                    </div>
                     <Link to={"/menu-select"}>
                         <button>Iniciar sesión</button>
                     </Link>

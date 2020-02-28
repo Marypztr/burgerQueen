@@ -5,17 +5,17 @@ import styles  from "./Menu.module.css"
 
 export default class Menu extends Component {
     render() {
-        const { items, chooseOne, order, deleteOne, cancelOrder } =this.context;
+        const { items, chooseOne, order, deleteOne, cancelOrder, sendToKitchen, handleSubmit, handleChangeName, handleChangeNumber, name, number } =this.context;
         return (
             <div>
-
                <div className={styles.navbar}>
                     <div>                        
-                    <p>Selecciona lo que indique el cliente</p>
-                    <section className={styles.dataMenu}>
-                        <div className={styles.menuType}><input type="text"  placeholder="Nombre del cliente"/></div>
-                        <div className={styles.menuType}><small>No.de mesa</small><input type="text"  placeholder="No."/></div>
-                    </section>
+                    <p>Ingresa los datos para comenzar a tomar la orden</p>
+                    <form onSubmit={handleSubmit} className={styles.dataMenu}>
+                        <div className={styles.menuType}><input value={name} onChange={handleChangeName} type="text"  placeholder="Nombre del cliente"/></div>
+                        <div className={styles.menuType}><small>No.de mesa</small><input value={number} onChange={handleChangeNumber} type="text"  placeholder="No."/></div>
+                         <button type="submit" value="submit"> <img src="https://pngimage.net/wp-content/uploads/2018/05/check-button-png-4.png"  alt="check"/></button>
+                    </form>
                     </div>
                 </div>
                 <section className={styles.gridContainer}>
@@ -47,8 +47,8 @@ export default class Menu extends Component {
                                     <li className={styles.container}>
                                     <div className={styles.cardPosition}>
                                         <div className={styles.cardBody}>
-                                            <label>{order.cant}</label>
-                                            <p>{order.name}</p>
+                                            <small>{order.cant}</small>
+                                            <small>{order.name}</small>
                                             <label> ${order.Total}</label>
                                             <button onClick={()=>deleteOne(order)}> <img src="https://cdn.pixabay.com/photo/2014/04/02/10/41/button-304223_960_720.png"/></button>
                                         </div>
@@ -58,11 +58,17 @@ export default class Menu extends Component {
                             ))}
                             <div className={styles.total}>
                                 <hr/>
-                                <p>Total:$00.00</p>
-                                    <div className={styles.buttons}>
+                            <p>Total:$
+                                {order.reduce((sum,newPrice) =>{
+                                    return sum + newPrice.Total;
+                                },0)
+                                }</p>
+                                    <div className={styles.buttons}>{order.length > 0 ? 
                                     <Link to="/confirmOrder">
-                                        <button>Mandar a cocina</button>
-                                    </Link>
+                                        <button onClick={()=> sendToKitchen()}>Mandar a cocina</button>
+                                    </Link> : 
+                                    <button onClick={()=> sendToKitchen(alert("no has tomado la orden"))}>Mandar a cocina</button>
+                                    }           
                                         <button onClick={()=> cancelOrder(order)} className={styles.cancelOrder}>Cancelar Orden</button>
                                 </div>
                             </div>

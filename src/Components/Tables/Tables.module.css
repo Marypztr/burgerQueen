@@ -6,6 +6,32 @@ paleta de colores
         #5BF543 VERDE
 */
 
+.navbar{
+    background-color: #43B4F5;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+
+    left: 0;
+ 
+    width:100%;
+    text-align: start;
+    color:white;
+    font-weight: bold;
+
+}
+
+
+.navbar > div{
+    width: 95%;
+ 
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .historyOrders{
     background-color:white ;
@@ -19,6 +45,7 @@ paleta de colores
 }
 
 .gridContainerTables{
+    margin-top:5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -27,7 +54,9 @@ paleta de colores
 
 }
 
-.cardOrder{
+.cardOrder {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     padding: 10%;
     border-radius: 20px;
@@ -37,7 +66,7 @@ paleta de colores
     -webkit-box-shadow: 5px 5px 6px 0px rgba(191,189,191,1);
     -moz-box-shadow: 5px 5px 6px 0px rgba(191,189,191,1);
     box-shadow: 5px 5px 6px 0px rgba(191,189,191,1);
-    font-family: 'Raleway', ;
+
 }
 
 
@@ -69,5 +98,29 @@ paleta de colores
 
 .cardOrder :nth-child(3){
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+
+.cardOrder :nth-child(5){
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.buttonsPositionCard{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.buttonBack button{
+    border:3px solid white;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
 }
